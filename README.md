@@ -29,28 +29,25 @@ A Python script that extracts metadata and comments from YouTube videos using Pl
 
 1. Clone the repository:
 ```bash
-git clone [repository-url]
-cd youtube-video-extractor
+git clone https://github.com/xkchok/yt-video-extractor.git
+cd yt-video-extractor
 ```
 
-2. Create and activate a virtual environment (recommended):
+2. Create and activate a virtual environment:
 ```bash
-python -m venv .venv
-# On Windows:
-.venv\Scripts\activate
-# On Unix or MacOS:
-source .venv/bin/activate
+pip install uv
+uv sync
 ```
 
 3. Install dependencies:
 ```bash
-pip install playwright
-playwright install chromium
+uv add playwright
+uvx playwright install chromium
 ```
 
 ## Usage
 
-1. Add your video IDs to the `video_ids` list in `test.py`:
+1. Add your video IDs to the `video_ids` list in `main.py`:
 ```python
 video_ids = [
     'c2tuxS3Pcto',  # Example video ID
@@ -61,7 +58,7 @@ video_ids = [
 
 2. Run the script:
 ```bash
-python test.py
+uv run main.py
 ```
 
 The script will:
