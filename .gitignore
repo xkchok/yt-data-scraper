@@ -9,5 +9,6 @@ wheels/
 # Virtual environments
 .venv
 
-youtube_data_*.csv
+video_data_*.csv
 processed_videos.txt
+channel_data_*.json

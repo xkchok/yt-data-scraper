@@ -187,7 +187,7 @@ async def main():
     
     # Generate filename with timestamp
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    csv_filename = f"youtube_data_{timestamp}.csv"
+    csv_filename = f"video_data_{timestamp}.csv"
     
     # Get already processed videos
     processed_videos = get_processed_videos()
