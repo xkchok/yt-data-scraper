@@ -41,8 +41,8 @@ A Python script collection that extracts data from YouTube using Playwright. The
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/xkchok/yt-video-extractor.git
-cd yt-video-extractor
+git clone https://github.com/xkchok/yt-data-scraper.git
+cd yt-data-scraper
 ```
 
 2. Create and activate a virtual environment:
